@@ -17,7 +17,6 @@ python /home/ubnt/speedtest-cli --no-pre-allocate >> /home/ubnt/test
 downval=$(grep -r "Download: " /home/ubnt/test | awk '{print $2}')
 upval=$(grep -r "Upload: " /home/ubnt/test | awk '{print $2}')
 
-echo "QOS Update"
 $runcfg begin
 $runcfg set traffic-control smart-queue QOS download rate ${downval}mbit
 $runcfg set traffic-control smart-queue QOS upload rate ${upval}mbit
