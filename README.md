@@ -9,7 +9,7 @@ This script is the implementation of the idea presented in [this](https://commun
 
 It has been tested successfully on EdgeRouter X v2.0.9.
 
-Before running the script update the value of `wanif` parameter by entering your WAN interface.
+Replace the value of `wanif` parameter in the script with your current WAN interface.
 
 This script should be added to `/config/scripts` and made executable:
 
@@ -27,3 +27,5 @@ set system task-scheduler task qos-update interval 15
 
 commit; save
 ```
+
+Instructions for downloading speedtest-cli and running scripts on Edge Routers are given [here](https://gist.github.com/nasirhafeez/9a2b9d236eaa48fc6d482f8aee603145)
